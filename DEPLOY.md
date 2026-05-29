@@ -39,21 +39,22 @@ FTP_PASS=********
 FTP_DIR=/public_html        # or /public_html/subdomain
 ```
 
-## Option C — cPanel Git Version Control (recommended for updates)
+## Option C — cPanel Git + Node.js (Passenger)
 
-cPanel shared hosting cannot build Next.js, so the built `out/` folder is
-committed to the repo and `.cpanel.yml` copies it into `public_html` on deploy.
+Runs the committed static export through Passenger via a zero-dependency
+`server.js`. The repo is committed with `out/` built, so no build runs on the
+server and no `npm install` is needed (server.js uses only Node built-ins).
 
 ### One-time setup
-1. **Deploy key (private repo auth):** cPanel → **SSH Access** → **Manage SSH
-   Keys** → generate a key (or reuse one) → **View/Download** the *public* key.
-   Add it to GitHub → repo **Settings → Deploy keys → Add** (read access is
-   enough). Authorize the key in cPanel.
-2. cPanel → **Git Version Control** → **Create** → *Clone a Repository*:
-   - **Clone URL:** `git@github.com:RiffiHamza/anfa_soft.git`
-   - **Repository Path:** e.g. `repositories/anfa_soft` (NOT public_html)
-3. After clone, open the repo → **Pull or Deploy** → **Deploy HEAD Commit**.
-   `.cpanel.yml` runs and copies `out/.` → `public_html`.
+1. cPanel → **Git Version Control** → **Create** → *Clone a Repository*:
+   - **Clone URL:** `https://github.com/RiffiHamza/anfa_soft.git` (public repo)
+   - **Repository Path:** `repositories/anfa_soft`
+2. cPanel → **Setup Node.js App** → open the `anfasoftworks.com` app (or create one):
+   - **Application root:** `repositories/anfa_soft`
+   - **Application startup file:** `server.js`
+   - **Node version:** 20.x, **mode:** Production
+   - **Save**, then **Restart**. (Do NOT "Run NPM Install" — not required.)
+3. Visit `https://anfasoftworks.com`.
 
 ### Every update
 ```bash
@@ -62,10 +63,9 @@ git add -A && git commit -m "update site"
 git push origin main
 ```
 Then cPanel → **Git Version Control** → repo → **Pull or Deploy** →
-**Update from Remote**, then **Deploy HEAD Commit**.
-
-> `.cpanel.yml` uses `$HOME/public_html`. If your account needs it, hardcode the
-> absolute path (`/home/<user>/public_html`).
+**Update from Remote** → **Deploy HEAD Commit**. `.cpanel.yml` touches
+`tmp/restart.txt`, so Passenger reloads and serves the new `out/`.
+(If a deploy ever doesn't show, hit **Restart** in Setup Node.js App.)
 
 ## Notes
 

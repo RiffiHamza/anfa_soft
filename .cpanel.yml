@@ -1,9 +1,8 @@
 ---
 deployment:
   tasks:
-    # Copy the static export (including dotfiles like .htaccess) into the
-    # primary domain web root. $HOME is the cPanel account home (/home/<user>).
-    # If $HOME does not resolve in your setup, replace it with the absolute
-    # path, e.g. /home/youruser/public_html
-    - export DEPLOYPATH=$HOME/public_html
-    - /bin/cp -R out/. "$DEPLOYPATH/"
+    # The cPanel Node.js (Passenger) app's Application root points at this
+    # repo. cPanel checks out the new commit here; touching tmp/restart.txt
+    # makes Passenger reload and serve the updated ./out via server.js.
+    - /bin/mkdir -p tmp
+    - /bin/touch tmp/restart.txt
