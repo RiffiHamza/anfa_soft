@@ -110,7 +110,8 @@ export default function Navbar() {
   const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
 
   return (
-    <header className="nav">
+    <>
+      <header className="nav">
       <nav className="nav__row" aria-label="Primary">
         <Link href="/" aria-label="Anfa Softworks, home">
           <Logo />
@@ -199,6 +200,7 @@ export default function Navbar() {
           </button>
         </div>
       </nav>
+      </header>
 
       {mobileOpen && (
         <div className="nav__panel" role="dialog" aria-modal="true" aria-label="Menu">
@@ -231,6 +233,6 @@ export default function Navbar() {
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 }

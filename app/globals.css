@@ -511,6 +511,8 @@ a {
 }
 .nav__panel-list {
   flex: 1;
+  min-height: 0;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   padding: 12px clamp(20px, 5vw, 24px);
