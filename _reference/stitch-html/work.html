@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Work | Anfa Softworks</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Inter+Tight:wght@600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom smooth transition for hover states */
+        .card-hover-transition {
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2f3130",
+                        "secondary-fixed": "#84f5e8",
+                        "primary-fixed": "#c7eae2",
+                        "on-tertiary-fixed": "#2e140c",
+                        "surface-container-highest": "#e3e2e1",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#ffdbd0",
+                        "secondary-container": "#81f3e5",
+                        "outline-variant": "#c1c8c5",
+                        "on-tertiary-container": "#c19587",
+                        "primary-container": "#1b3b36",
+                        "surface-container-low": "#f4f3f2",
+                        "on-surface": "#1a1c1b",
+                        "inverse-primary": "#abcec6",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#faf9f8",
+                        "surface": "#faf9f8",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#00201d",
+                        "primary": "#032521",
+                        "secondary-fixed-dim": "#66d9cc",
+                        "on-error": "#ffffff",
+                        "tertiary": "#341910",
+                        "secondary": "#006a62",
+                        "on-primary-fixed": "#00201c",
+                        "surface-variant": "#e3e2e1",
+                        "surface-container": "#eeeeec",
+                        "surface-tint": "#44645f",
+                        "surface-container-high": "#e8e8e7",
+                        "on-surface-variant": "#414846",
+                        "outline": "#717976",
+                        "on-secondary-fixed-variant": "#005049",
+                        "primary-fixed-dim": "#abcec6",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#006f66",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f1f1ef",
+                        "on-tertiary-fixed-variant": "#603e34",
+                        "tertiary-fixed-dim": "#ecbcad",
+                        "on-background": "#1a1c1b",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#2d4c47",
+                        "on-primary-container": "#84a59e",
+                        "background": "#faf9f8",
+                        "surface-dim": "#dadad9",
+                        "tertiary-container": "#4d2e24",
+                        "signal-blue": "#26A69A", /* Emerald from brand guidelines */
+                        "anfa-deep-blue": "#1B3B36", /* Forest Green from brand guidelines */
+                        "mist": "#F7F9F8",
+                        "ink": "#1a1c1b",
+                        "cloud": "#e3e2e1",
+                        "slate": "#414846"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "stack-sm": "8px",
+                        "unit": "8px",
+                        "stack-lg": "32px",
+                        "huge": "80px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Inter Tight"],
+                        "headline-lg": ["Inter Tight"],
+                        "display-lg": ["Inter Tight"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter Tight"],
+                        "display-lg-mobile": ["Inter Tight"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-xl": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-lg": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface-container-lowest font-body-md text-on-surface">
+<!-- TopNavBar -->
+<nav class="bg-pure-white/90 dark:bg-ink/90 backdrop-blur-md font-caption text-caption docked full-width top-0 sticky border-b border-cloud dark:border-outline-variant shadow-sm dark:shadow-none transition-all duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] z-50">
+<div class="flex justify-between items-center h-[72px] px-8 max-w-[1280px] mx-auto">
+<div class="font-h3 text-[24px] font-bold text-anfa-deep-blue dark:text-primary-fixed">
+                Anfa Softworks
+            </div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="text-slate dark:text-surface-variant hover:text-signal-blue transition-colors duration-200" href="#">Services</a>
+<a class="text-ink dark:text-pure-white border-b-2 border-signal-blue pb-1 hover:text-signal-blue transition-colors duration-200" href="#">Work</a>
+<a class="text-slate dark:text-surface-variant hover:text-signal-blue transition-colors duration-200" href="#">About</a>
+<a class="text-slate dark:text-surface-variant hover:text-signal-blue transition-colors duration-200" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-secondary text-on-primary px-6 py-2.5 rounded-full font-label-md hover:bg-secondary/90 transition-colors duration-200">
+                    Start a project
+                </button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="bg-surface-container-lowest py-[140px] px-8">
+<div class="max-w-[1280px] mx-auto">
+<p class="font-label-md text-signal-blue tracking-widest uppercase mb-4">SELECTED WORK</p>
+<h1 class="font-display-lg text-[72px] text-primary leading-[1.05] tracking-tight mb-6 max-w-3xl">
+                    Software we've shipped.
+                </h1>
+<p class="font-body-lg text-slate max-w-2xl">
+                    A selection of recent projects. Each one shipped, tested, and serving real users in production.
+                </p>
+</div>
+</section>
+<!-- Filter Tabs -->
+<section class="pb-12 px-8">
+<div class="max-w-[1280px] mx-auto border-b border-cloud flex gap-8">
+<button class="pb-4 font-label-md text-primary border-b-2 border-signal-blue">All</button>
+<button class="pb-4 font-label-md text-slate hover:text-primary transition-colors">Web</button>
+<button class="pb-4 font-label-md text-slate hover:text-primary transition-colors">Mobile</button>
+<button class="pb-4 font-label-md text-slate hover:text-primary transition-colors">AI</button>
+<button class="pb-4 font-label-md text-slate hover:text-primary transition-colors">SaaS</button>
+</div>
+</section>
+<!-- Case Study Grid -->
+<section class="pb-huge px-8">
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card A -->
+<div class="group card-hover-transition bg-surface-container-lowest border border-mist rounded-xl overflow-hidden hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(27,59,54,0.08)]">
+<div class="aspect-[16/10] bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" data-alt="A clean, minimalist digital dashboard displaying complex financial ledger data and real-time syncing progress. The aesthetic is modern and professional with a cool color palette of whites, soft greys, and emerald green accents. Soft lighting illuminates the UI elements, highlighting a sophisticated and engineered financial software environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm4g9dbbqVXlQGQm7_Sp7eXrb-bE-0ryC8Yg04CL1aditfOtG8u19ULSqFYjmjcR36cgpYyMBchQVR2dW_z8XjWK-8qoTtbTVqSN1sOPs3QzYFL8VVQ2FmgY2n-4AUTuIn0Oy6-xRy7Lnp4i9gBeFzbBDDhQFVNJoLrOm1Z2KwMZnJGLkKyQ9SmFrbAeOOFtDP_5MgJvDA9s2U910IkdgV4fA8uWrYp6VYxIs2Ib8Apj2JSkHBMMvRU52tnAzSKUu8-bqlHwztIlQ"/>
+</div>
+<div class="p-6">
+<p class="font-label-md text-signal-blue mb-2 uppercase">FINTECH</p>
+<h3 class="font-headline-lg text-primary mb-2">Ledger sync platform</h3>
+<p class="font-body-md text-slate mb-6">Reduced reconciliation time from 4 hours to 8 minutes.</p>
+<a class="font-label-md text-primary flex items-center gap-2 group/link" href="#">
+                            View case <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card B -->
+<div class="group card-hover-transition bg-surface-container-lowest border border-mist rounded-xl overflow-hidden hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(27,59,54,0.08)]">
+<div class="aspect-[16/10] bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" data-alt="A professional medical intake application interface displayed on a high-resolution tablet. The design is airy and clean, utilizing ample white space and the botanical emerald green brand color for primary actions. The setting is a bright, high-key modern healthcare environment with soft natural lighting, conveying trust and efficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXG6YzwGo437wvf8UtJXPiZ7GOPP11tSHWFHo7HG52oCIcZvnixMPmTbPKfuy7snkuAMeieTsawU5K2y56EB4UQzgt-g55qxI0MxWIbZtkxDOXOLAP9gPHZ7C3DnvDMnVjg8v00uotsoLJeOgMAsMSwhYtQasQCct3iSMmpTwzZ5mJyqUXIKvhnYthGIS2MPaEEc0kvcbvuWzU70GAuFXWIZ9l6QCIPpuUdEoA1JTbItPQP8qEzdh1HcQunSaL5-CXUKrd8bDRMok"/>
+</div>
+<div class="p-6">
+<p class="font-label-md text-signal-blue mb-2 uppercase">HEALTHCARE</p>
+<h3 class="font-headline-lg text-primary mb-2">Patient intake portal</h3>
+<p class="font-body-md text-slate mb-6">30% drop in administrative time per appointment.</p>
+<a class="font-label-md text-primary flex items-center gap-2 group/link" href="#">
+                            View case <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card C -->
+<div class="group card-hover-transition bg-surface-container-lowest border border-mist rounded-xl overflow-hidden hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(27,59,54,0.08)]">
+<div class="aspect-[16/10] bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" data-alt="A sophisticated fleet logistics dashboard showing a map with hundreds of real-time vehicle tracking indicators. The UI features high contrast and a disciplined grid layout, using deep forest greens and vibrant signal emeralds. The lighting is crisp and modern, emphasizing the engineered precision of a large-scale operations tool." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcsvRiMEfIi0fLEQlDCHRP9hHyzKKI9LI1trTU3JX68DtpP9egF4AXqPGCBJycKt7V5iEK7fZrB4UXhidz_6acxYkaidscWS0IsozrZbD_jDsNH76-3IjMk5MBftl2kBGSmbsJjD6JPdoq0-sOVfkPogVPFJG6xdiYEuI7ZhnMa7m-JEv8dCJ5Coy8QDh6h6j_H77FTmtQa3TXgSkHps1yw8CKienz4tpGzdvqURi9KqJ6729HwY4Pncu5W3MbcRvE_gKVrTtXJpU"/>
+</div>
+<div class="p-6">
+<p class="font-label-md text-signal-blue mb-2 uppercase">LOGISTICS</p>
+<h3 class="font-headline-lg text-primary mb-2">Fleet operations dashboard</h3>
+<p class="font-body-md text-slate mb-6">Real-time visibility across 240 vehicles.</p>
+<a class="font-label-md text-primary flex items-center gap-2 group/link" href="#">
+                            View case <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card D -->
+<div class="group card-hover-transition bg-surface-container-lowest border border-mist rounded-xl overflow-hidden hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(27,59,54,0.08)]">
+<div class="aspect-[16/10] bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" data-alt="An abstract representation of an AI customer support interface, featuring glowing nodes and clean typography on a light-mode background. The design elements are structured around a 12-column grid, with emerald green status indicators. The atmosphere is serene and technologically advanced, suggesting high-level automation and intelligence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGKV41BIrnEWCh_w6Iyp5sSciSzwzaa66UHaA9F-dUmCB_rziHz-u9U7_dseXg8vbtCGRtDkL1uNs_AJkbtwzMwObXp-BHpAKmDLy0D7aCf1LhzhHbMEB7AFaAjNNgc1I7k_t5D2F6U_yj6uqal6icgeAkND4zXSWmT4LpvlG_z8aozewkrUghgURkmH5CUZIOm1IC--w9oP4WxKI55c66asxh2ox2_ywZ6o5RebWQIbCY3WZUztug87NxrS8YNj7PRGjriz-myoY"/>
+</div>
+<div class="p-6">
+<p class="font-label-md text-signal-blue mb-2 uppercase">SAAS</p>
+<h3 class="font-headline-lg text-primary mb-2">AI support copilot</h3>
+<p class="font-body-md text-slate mb-6">Resolved 62% of tickets without human handoff.</p>
+<a class="font-label-md text-primary flex items-center gap-2 group/link" href="#">
+                            View case <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card E -->
+<div class="group card-hover-transition bg-surface-container-lowest border border-mist rounded-xl overflow-hidden hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(27,59,54,0.08)]">
+<div class="aspect-[16/10] bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" data-alt="A premium e-commerce storefront mockup showcasing high-end products with a minimalist aesthetic. The interface is light and airy, featuring generous whitespace and elegant botanical green accents. High-key lighting emphasizes the clean architectural layout and the sophisticated software engineering behind the multi-region platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbnyFcj79tXJr80X23jTh-8Hly5y7XUlNcYL0RgF3CdRdZuE8qg-onn2IBxWCQFRxZf_8loFA1Db7uqVelsJxhOrPs2vwJEOeHxu5NSa4li5S-3oC7ieA2p9-P-gtljliX5CxS2JX8C_rCD7hJvchyzOLjLp2edySbdLg3gfhhPcuDox9hatWGhxXFQE80MIWej88cgCGjjivkES--Ji9D4PV3gyX2EYK17q5HQjhcXgYgOwxY2dzDlOQSvsC4WxGpp_npCU7lKgk"/>
+</div>
+<div class="p-6">
+<p class="font-label-md text-signal-blue mb-2 uppercase">E-COMMERCE</p>
+<h3 class="font-headline-lg text-primary mb-2">Multi-region storefront</h3>
+<p class="font-body-md text-slate mb-6">$2.4M GMV in launch quarter.</p>
+<a class="font-label-md text-primary flex items-center gap-2 group/link" href="#">
+                            View case <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card F -->
+<div class="group card-hover-transition bg-surface-container-lowest border border-mist rounded-xl overflow-hidden hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(27,59,54,0.08)]">
+<div class="aspect-[16/10] bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" data-alt="A visualization of a large-scale enterprise data platform with deep architectural layers and clean data flows. The visual style is clinical yet premium, using the forest green palette and disciplined geometric alignments. Soft ambient shadows provide depth, while the overall scene is bright and meticulously organized." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4IgkFprTLCOya_OLgkIAgWD-EEBwskltQLndIDcbS7XsB14Ym8xgJP4XxKEGknENQQ160duzTQw8ujvsvBHlQ6KfJ4Ga9V4QLN280Yckpqdjn9LoGyHTWPQCjHmc4Qb4uHmTCj4V8RzhrzrmrnaBvmbX9eJGLsdU0b_nghd2_wp8cjTgpea1QbJfM9Ga9SdN2PHojcOORSTSvF1zVrBjNfVhcfSXBXPORsw8dds8WKj17yvGUTNmOodUAhki2CWwQjoRmQCalBQs"/>
+</div>
+<div class="p-6">
+<p class="font-label-md text-signal-blue mb-2 uppercase">ENTERPRISE</p>
+<h3 class="font-headline-lg text-primary mb-2">Internal data platform</h3>
+<p class="font-body-md text-slate mb-6">Replaced 5 legacy tools with one workspace.</p>
+<a class="font-label-md text-primary flex items-center gap-2 group/link" href="#">
+                            View case <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Strip -->
+<section class="bg-mist py-20 px-8 border-y border-cloud">
+<div class="max-w-[1280px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-huge">
+<div>
+<p class="font-display-lg text-primary mb-2">12+</p>
+<p class="font-label-md text-slate">Projects shipped</p>
+</div>
+<div>
+<p class="font-display-lg text-primary mb-2">8</p>
+<p class="font-label-md text-slate">Industries served</p>
+</div>
+<div>
+<p class="font-display-lg text-primary mb-2">99.9%</p>
+<p class="font-label-md text-slate">Uptime SLA</p>
+</div>
+<div>
+<p class="font-display-lg text-primary mb-2">4–6wk</p>
+<p class="font-label-md text-slate">Average delivery</p>
+</div>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="bg-surface-container-lowest py-[120px] px-8 text-center">
+<div class="max-w-2xl mx-auto">
+<h2 class="font-headline-xl text-primary mb-4">Want yours next?</h2>
+<p class="font-body-lg text-slate mb-10">We're currently accepting new projects for Q1 2025. Let's build something exceptional together.</p>
+<button class="bg-secondary text-on-primary px-10 py-4 rounded-full font-label-md hover:bg-secondary/90 transition-colors duration-200">
+                    Start a project
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-mist dark:bg-ink full-width">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-xl py-huge px-8 max-w-[1280px] mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-h3 text-[24px] font-bold text-anfa-deep-blue dark:text-primary-fixed mb-6">
+                    Anfa Softworks
+                </div>
+<p class="font-caption text-slate dark:text-surface-variant max-w-xs">
+                    © 2024 Anfa Softworks. NM Registration Statement: Licensed and regulated.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-label-md text-primary dark:text-primary-fixed-dim uppercase tracking-wider mb-2">Services</p>
+<a class="font-caption text-slate dark:text-surface-variant hover:text-signal-blue transition-colors" href="#">Web Apps</a>
+<a class="font-caption text-slate dark:text-surface-variant hover:text-signal-blue transition-colors" href="#">Mobile Solutions</a>
+<a class="font-caption text-slate dark:text-surface-variant hover:text-signal-blue transition-colors" href="#">AI Integration</a>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-label-md text-primary dark:text-primary-fixed-dim uppercase tracking-wider mb-2">Company</p>
+<a class="font-caption text-slate dark:text-surface-variant hover:text-signal-blue transition-colors" href="#">Work</a>
+<a class="font-caption text-slate dark:text-surface-variant hover:text-signal-blue transition-colors" href="#">About</a>
+<a class="font-caption text-slate dark:text-surface-variant hover:text-signal-blue transition-colors" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-label-md text-primary dark:text-primary-fixed-dim uppercase tracking-wider mb-2">Legal</p>
+<a class="font-caption text-slate dark:text-surface-variant hover:text-signal-blue transition-colors" href="#">Privacy Policy</a>
+<a class="font-caption text-slate dark:text-surface-variant hover:text-signal-blue transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

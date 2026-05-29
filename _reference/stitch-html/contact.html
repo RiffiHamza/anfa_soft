@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | Anfa Softworks</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Inter+Tight:wght@600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-dim": "#dadad9",
+                      "primary-fixed-dim": "#abcec6",
+                      "on-tertiary-fixed": "#2e140c",
+                      "on-error-container": "#93000a",
+                      "on-secondary-container": "#006f66",
+                      "inverse-on-surface": "#f1f1ef",
+                      "secondary-fixed-dim": "#66d9cc",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container": "#eeeeec",
+                      "on-secondary-fixed": "#00201d",
+                      "inverse-primary": "#abcec6",
+                      "on-error": "#ffffff",
+                      "secondary": "#006a62",
+                      "surface-container-low": "#f4f3f2",
+                      "on-tertiary-fixed-variant": "#603e34",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed-variant": "#005049",
+                      "error-container": "#ffdad6",
+                      "background": "#faf9f8",
+                      "on-surface": "#1a1c1b",
+                      "on-primary-fixed-variant": "#2d4c47",
+                      "secondary-container": "#81f3e5",
+                      "primary-container": "#1b3b36",
+                      "on-tertiary-container": "#c19587",
+                      "outline-variant": "#c1c8c5",
+                      "on-tertiary": "#ffffff",
+                      "on-surface-variant": "#414846",
+                      "surface": "#faf9f8",
+                      "on-primary-fixed": "#00201c",
+                      "surface-bright": "#faf9f8",
+                      "primary": "#032521",
+                      "surface-container-highest": "#e3e2e1",
+                      "on-primary-container": "#84a59e",
+                      "inverse-surface": "#2f3130",
+                      "primary-fixed": "#c7eae2",
+                      "secondary-fixed": "#84f5e8",
+                      "on-secondary": "#ffffff",
+                      "on-background": "#1a1c1b",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed-dim": "#ecbcad",
+                      "tertiary": "#341910",
+                      "tertiary-container": "#4d2e24",
+                      "surface-variant": "#e3e2e1",
+                      "surface-container-high": "#e8e8e7",
+                      "surface-tint": "#44645f",
+                      "tertiary-fixed": "#ffdbd0",
+                      "outline": "#717976",
+                      "anfa-deep-blue": "#0B3B82",
+                      "signal-blue": "#0066FF",
+                      "ink": "#1a1c1b",
+                      "mist": "#F7F9FC",
+                      "cloud": "#E2E8F0",
+                      "slate": "#64748B"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-sm": "8px",
+                      "margin-mobile": "20px",
+                      "gutter": "24px",
+                      "stack-lg": "32px",
+                      "margin-desktop": "64px",
+                      "unit": "8px",
+                      "stack-md": "16px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "label-md": ["Inter"],
+                      "body-md": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "display-lg-mobile": ["Inter Tight"],
+                      "headline-xl": ["Inter Tight"],
+                      "headline-lg": ["Inter Tight"],
+                      "display-lg": ["Inter Tight"],
+                      "headline-md": ["Inter Tight"]
+              },
+              "fontSize": {
+                      "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "headline-xl": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "headline-lg": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-md": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: #ffffff;
+            color: #1a1c1b;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .focus-ring:focus {
+            outline: none;
+            border-color: #0066FF;
+            box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-surface">
+<!-- Navigation (TopNavBar) -->
+<nav class="bg-pure-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-cloud shadow-sm w-full h-[72px]">
+<div class="max-w-[1280px] mx-auto px-8 h-full flex justify-between items-center">
+<div class="font-h3 text-[24px] font-bold text-anfa-deep-blue">Anfa Softworks</div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-caption text-caption text-slate hover:text-signal-blue transition-colors duration-200" href="#">Services</a>
+<a class="font-caption text-caption text-slate hover:text-signal-blue transition-colors duration-200" href="#">Work</a>
+<a class="font-caption text-caption text-slate hover:text-signal-blue transition-colors duration-200" href="#">About</a>
+<a class="font-caption text-caption text-ink border-b-2 border-signal-blue pb-1 transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="bg-signal-blue text-on-primary px-6 py-2.5 rounded-lg font-label-md text-label-md hover:bg-anfa-deep-blue transition-all duration-200">
+                Start a project
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="pt-24 pb-16 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-2xl mx-auto text-center">
+<span class="text-signal-blue font-bold tracking-widest text-[12px] uppercase mb-4 block">CONTACT</span>
+<h1 class="font-display-lg text-[72px] text-ink leading-tight mb-6">Start a project.</h1>
+<p class="text-slate font-body-lg text-body-lg">Tell us about what you're building. We reply within one business day.</p>
+</div>
+</section>
+<!-- Main Contact Section -->
+<section class="pb-24 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-16">
+<!-- Left Column: Form -->
+<div class="bg-mist rounded-[12px] p-8 md:p-12 shadow-[0_4px_24px_rgba(27,59,54,0.04)]">
+<form class="flex flex-col gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-[14px] font-medium text-ink" for="name">Name</label>
+<input class="bg-white border-[1.5px] border-cloud rounded-lg px-4 py-3 text-body-md focus-ring" id="name" placeholder="Your full name" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-[14px] font-medium text-ink" for="email">Email</label>
+<input class="bg-white border-[1.5px] border-cloud rounded-lg px-4 py-3 text-body-md focus-ring" id="email" placeholder="email@company.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-[14px] font-medium text-ink" for="company">Company <span class="text-slate/60 font-normal">(Optional)</span></label>
+<input class="bg-white border-[1.5px] border-cloud rounded-lg px-4 py-3 text-body-md focus-ring" id="company" placeholder="Business name" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-[14px] font-medium text-ink" for="project-type">Project type</label>
+<select class="bg-white border-[1.5px] border-cloud rounded-lg px-4 py-3 text-body-md focus-ring appearance-none" id="project-type">
+<option>Web app</option>
+<option>Mobile app</option>
+<option>AI integration</option>
+<option>Custom software</option>
+<option>Not sure yet</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-[14px] font-medium text-ink" for="budget">Budget range</label>
+<select class="bg-white border-[1.5px] border-cloud rounded-lg px-4 py-3 text-body-md focus-ring appearance-none" id="budget">
+<option>$10k–$25k</option>
+<option>$25k–$50k</option>
+<option>$50k–$100k</option>
+<option>$100k+</option>
+<option>Let's discuss</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-[14px] font-medium text-ink" for="details">Project details</label>
+<textarea class="bg-white border-[1.5px] border-cloud rounded-lg px-4 py-3 text-body-md focus-ring" id="details" placeholder="Tell us about your goals, timeline, and requirements..." rows="5"></textarea>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-4 mt-2">
+<button class="w-full md:w-auto bg-signal-blue text-white font-semibold px-10 py-4 rounded-lg hover:bg-anfa-deep-blue transition-all duration-200" type="submit">
+                            Send message
+                        </button>
+<span class="text-slate text-[14px]">We'll get back to you within 1 business day.</span>
+</div>
+</form>
+</div>
+<!-- Right Column: Details -->
+<div class="flex flex-col gap-12 py-4">
+<div class="flex flex-col gap-3">
+<span class="text-signal-blue font-bold tracking-widest text-[12px] uppercase">DIRECT</span>
+<h3 class="font-headline-md text-headline-md text-ink">Email us anytime</h3>
+<a class="flex items-center gap-2 text-signal-blue font-medium text-body-lg hover:underline decoration-2 underline-offset-4" href="mailto:team@anfasoftworks.com">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+                        team@anfasoftworks.com
+                    </a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-signal-blue font-bold tracking-widest text-[12px] uppercase">RESPONSE TIME</span>
+<h3 class="font-headline-md text-headline-md text-ink">1 business day</h3>
+<p class="text-slate font-body-md">We read every message personally. No bots.</p>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-signal-blue font-bold tracking-widest text-[12px] uppercase">LOCATION</span>
+<h3 class="font-headline-md text-headline-md text-ink">Albuquerque, NM</h3>
+<p class="text-slate font-body-md">Anfa Softworks LLC, registered in New Mexico, USA.</p>
+</div>
+<!-- Subtle visual anchor/image -->
+<div class="mt-8 rounded-xl overflow-hidden aspect-[4/3] bg-surface-container">
+<img class="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 transition-all duration-500" data-alt="A professional and clean office interior in Albuquerque featuring minimalist modern furniture and large windows letting in bright desert daylight. The space is engineered and tidy, reflecting a trustworthy corporate software agency aesthetic with high-key lighting and a soft architectural atmosphere. The scene is professional, airy, and focused." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaKsmFdGk6yFNmvOn6viw01D987Y2b2PKNNZSejmpu8we1LejZ8yUYCNdIJeyD0iEvfvaSkuS33Dzo0DNO0E2Thv9YUM0aExk1ZMVPkcJ0aaD2JJJEt27lwFs8ge48hJnKofZCWgnY3Y2f2Vu3Yi8JkZmqU8kmehqtwvMqFWnxwaOLQlWW6QGzdPJzajtGwAV3M8B9d0kKcaGv8-NyWwPxiRstLP6Dh3UO9xtV_QeL_ELRneOUfPky5K276d7iT79WkSRKNIxQRCM"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Strip -->
+<section class="bg-mist py-12 border-y border-cloud/50">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-wrap justify-center gap-6">
+<div class="flex items-center gap-3 bg-[#E0EAFF] px-5 py-3 rounded-full border border-signal-blue/10">
+<span class="material-symbols-outlined text-signal-blue text-[20px]">verified_user</span>
+<span class="text-anfa-deep-blue font-medium text-[14px]">NDA available on request</span>
+</div>
+<div class="flex items-center gap-3 bg-[#E0EAFF] px-5 py-3 rounded-full border border-signal-blue/10">
+<span class="material-symbols-outlined text-signal-blue text-[20px]">account_balance</span>
+<span class="text-anfa-deep-blue font-medium text-[14px]">US-registered LLC</span>
+</div>
+<div class="flex items-center gap-3 bg-[#E0EAFF] px-5 py-3 rounded-full border border-signal-blue/10">
+<span class="material-symbols-outlined text-signal-blue text-[20px]">payments</span>
+<span class="text-anfa-deep-blue font-medium text-[14px]">Fixed-price proposals</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Call Banner -->
+<section class="py-24 bg-white">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="font-headline-xl text-headline-xl text-ink mb-8">Prefer a call?</h2>
+<div class="flex justify-center">
+<button class="flex items-center gap-3 px-10 py-4 rounded-lg border-2 border-anfa-deep-blue text-anfa-deep-blue font-semibold hover:bg-mist transition-colors duration-200">
+<span class="material-symbols-outlined">calendar_today</span>
+                    Book a 30-min intro
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-mist py-huge px-8">
+<div class="max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-4 gap-xl py-24">
+<div class="flex flex-col gap-6">
+<div class="font-h3 text-[24px] font-bold text-anfa-deep-blue">Anfa Softworks</div>
+<p class="text-slate font-caption text-caption">Crafting premium digital experiences through engineered software solutions.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-ink font-semibold uppercase text-[12px] tracking-widest">Platform</h4>
+<div class="flex flex-col gap-2">
+<a class="text-slate hover:text-signal-blue transition-colors duration-200 font-caption text-caption" href="#">Services</a>
+<a class="text-slate hover:text-signal-blue transition-colors duration-200 font-caption text-caption" href="#">Work</a>
+<a class="text-slate hover:text-signal-blue transition-colors duration-200 font-caption text-caption" href="#">About</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-ink font-semibold uppercase text-[12px] tracking-widest">Connect</h4>
+<div class="flex flex-col gap-2">
+<a class="text-signal-blue font-semibold transition-colors duration-200 font-caption text-caption" href="#">Contact</a>
+<a class="text-slate hover:text-signal-blue transition-colors duration-200 font-caption text-caption" href="#">LinkedIn</a>
+<a class="text-slate hover:text-signal-blue transition-colors duration-200 font-caption text-caption" href="#">Twitter</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-ink font-semibold uppercase text-[12px] tracking-widest">Legal</h4>
+<div class="flex flex-col gap-2">
+<a class="text-slate hover:text-signal-blue transition-colors duration-200 font-caption text-caption" href="#">Privacy Policy</a>
+<a class="text-slate hover:text-signal-blue transition-colors duration-200 font-caption text-caption" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="max-w-max-width mx-auto px-8 py-8 border-t border-cloud">
+<p class="text-slate font-caption text-[12px] text-center">© 2024 Anfa Softworks. NM Registration Statement: Licensed and regulated.</p>
+</div>
+</footer>
+</body></html>

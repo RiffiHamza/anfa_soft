@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | StudioEngineered</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Inter+Tight:wght@600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed-variant": "#005049",
+                      "error": "#ba1a1a",
+                      "on-primary-container": "#84a59e",
+                      "on-primary-fixed": "#00201c",
+                      "surface-container-highest": "#e3e2e1",
+                      "primary-fixed": "#c7eae2",
+                      "inverse-primary": "#abcec6",
+                      "on-tertiary-fixed": "#2e140c",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-fixed": "#ffdbd0",
+                      "on-error-container": "#93000a",
+                      "primary-container": "#1b3b36",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed-dim": "#ecbcad",
+                      "surface-tint": "#44645f",
+                      "on-tertiary": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed": "#00201d",
+                      "tertiary-container": "#4d2e24",
+                      "surface-dim": "#dadad9",
+                      "surface-variant": "#e3e2e1",
+                      "background": "#faf9f8",
+                      "primary-fixed-dim": "#abcec6",
+                      "on-surface": "#1a1c1b",
+                      "on-secondary": "#ffffff",
+                      "surface-container-low": "#f4f3f2",
+                      "on-tertiary-fixed-variant": "#603e34",
+                      "inverse-on-surface": "#f1f1ef",
+                      "primary": "#032521",
+                      "surface-bright": "#faf9f8",
+                      "tertiary": "#341910",
+                      "outline-variant": "#c1c8c5",
+                      "on-error": "#ffffff",
+                      "surface-container-high": "#e8e8e7",
+                      "surface-container": "#eeeeec",
+                      "on-surface-variant": "#414846",
+                      "surface": "#faf9f8",
+                      "secondary-fixed-dim": "#66d9cc",
+                      "secondary": "#006a62",
+                      "outline": "#717976",
+                      "on-secondary-container": "#006f66",
+                      "inverse-surface": "#2f3130",
+                      "on-tertiary-container": "#c19587",
+                      "on-background": "#1a1c1b",
+                      "secondary-fixed": "#84f5e8",
+                      "secondary-container": "#81f3e5",
+                      "on-primary-fixed-variant": "#2d4c47",
+                      // Anfa Brand Override
+                      "anfa-blue": "#0B3B82",
+                      "signal-blue": "#0066FF",
+                      "mist-gray": "#F7F9FC",
+                      "slate-text": "#475569"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "stack-md": "16px",
+                      "stack-sm": "8px",
+                      "unit": "8px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "stack-lg": "32px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "headline-xl": ["Inter Tight"],
+                      "display-lg-mobile": ["Inter Tight"],
+                      "label-md": ["Inter"],
+                      "display-lg": ["Inter Tight"],
+                      "body-lg": ["Inter"],
+                      "body-md": ["Inter"],
+                      "headline-md": ["Inter Tight"],
+                      "headline-lg": ["Inter Tight"]
+              },
+              "fontSize": {
+                      "headline-xl": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                      "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-md": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                      "headline-lg": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-h1 { font-size: 72px; line-height: 1.1; letter-spacing: -0.04em; }
+        @media (max-width: 768px) { .hero-h1 { font-size: 48px; } }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-signal-blue/10 selection:text-signal-blue">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+<div class="font-headline-md text-headline-md font-bold text-anfa-blue tracking-tight">StudioEngineered</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-signal-blue transition-colors" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-signal-blue transition-colors" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-signal-blue transition-colors" href="#">Work</a>
+<a class="font-label-md text-label-md text-signal-blue border-b-2 border-signal-blue pb-1" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-signal-blue transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-signal-blue text-white px-6 py-2.5 rounded-lg font-label-md text-label-md hover:bg-anfa-blue transition-colors duration-300">
+                Start a project
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="bg-white py-[140px]">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-7">
+<span class="font-label-md text-label-md text-signal-blue tracking-widest uppercase mb-4 block">ABOUT</span>
+<h1 class="hero-h1 font-headline-xl text-anfa-blue font-bold mb-8">A studio built to ship.</h1>
+<p class="font-body-lg text-body-lg text-slate-text max-w-xl">
+                            Anfa Softworks is an independent software studio working with companies who want senior engineering without the agency overhead.
+                        </p>
+</div>
+<div class="md:col-span-5">
+<img alt="Architectural Workspace" class="w-full h-[500px] object-cover rounded-xl shadow-sm border border-outline-variant/20" data-alt="A bright and airy, daylit architectural workspace featuring clean lines, glass partitions, and minimalist desks. The interior design is modern and professional with a cool color tint that emphasizes a pristine, light-mode aesthetic. Soft natural light floods through large windows, creating a serene environment for focused engineering work, presented with a sophisticated 12px border radius." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAoJD5j-y-czEw94S5J3soWArtFiRXTb3Ocnbk_8c391GgfvCzZUXAm8BPXm2pgXLJE3SKJR7GB5Seet8JUZGnjL-JIjmF8N7yfjhcZVNO9LpAQApJ0UEso3-kPftkgQnTHHg3LlSI7IFMdVgASVJo9cX8heQaQKCo4C4jnBcTxwxyHBJu7fuWedZjo3PVr92PbDFP9TqNaMPEigtxfkAMJDb9y3QLEiWrhMrTg7vkxl0xaTLrV5llkBJrSY01dNBx5oyOpgQ-wYc"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="bg-mist-gray py-24">
+<div class="max-w-[720px] mx-auto px-margin-mobile text-center">
+<span class="font-label-md text-label-md text-signal-blue tracking-widest uppercase mb-4 block">OUR STORY</span>
+<h2 class="font-headline-lg text-headline-lg text-anfa-blue mb-8">Founded in 2026.</h2>
+<div class="space-y-6 text-left">
+<p class="font-body-lg text-body-lg text-slate-text">
+                        Anfa Softworks was established to bridge the gap between large, slow-moving agencies and the inconsistency of individual freelancers. We believe that elite software doesn't require a cast of dozens—it requires a small, disciplined team of senior experts who are focused entirely on the build.
+                    </p>
+<p class="font-body-lg text-body-lg text-slate-text">
+                        Our philosophy is simple: we ship working software, charge fairly for our expertise, and respect our clients' time by removing the fluff and bureaucracy that typically plagues digital transformation projects.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Principles Strip -->
+<section class="bg-white py-24">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Principle 1 -->
+<div class="p-8 rounded-xl border border-outline-variant/10 hover:border-signal-blue/30 transition-colors duration-300">
+<span class="material-symbols-outlined text-signal-blue mb-6 block text-[32px]">engineering</span>
+<h3 class="font-headline-md text-headline-md text-anfa-blue mb-4">Senior by default</h3>
+<p class="font-body-md text-body-md text-slate-text">No juniors learning on your project. Every engineer is senior with over a decade of experience.</p>
+</div>
+<!-- Principle 2 -->
+<div class="p-8 rounded-xl border border-outline-variant/10 hover:border-signal-blue/30 transition-colors duration-300">
+<span class="material-symbols-outlined text-signal-blue mb-6 block text-[32px]">assignment_turned_in</span>
+<h3 class="font-headline-md text-headline-md text-anfa-blue mb-4">Fixed scope, fixed price</h3>
+<p class="font-body-md text-body-md text-slate-text">You know exactly what you're getting and how much it will cost before we write a single line of code.</p>
+</div>
+<!-- Principle 3 -->
+<div class="p-8 rounded-xl border border-outline-variant/10 hover:border-signal-blue/30 transition-colors duration-300">
+<span class="material-symbols-outlined text-signal-blue mb-6 block text-[32px]">bolt</span>
+<h3 class="font-headline-md text-headline-md text-anfa-blue mb-4">Ship in weeks, not quarters</h3>
+<p class="font-body-md text-body-md text-slate-text">Speed is a feature. Most projects launch in 4 to 6 weeks, focused on high-impact MVP requirements.</p>
+</div>
+<!-- Principle 4 -->
+<div class="p-8 rounded-xl border border-outline-variant/10 hover:border-signal-blue/30 transition-colors duration-300">
+<span class="material-symbols-outlined text-signal-blue mb-6 block text-[32px]">verified</span>
+<h3 class="font-headline-md text-headline-md text-anfa-blue mb-4">US-registered LLC</h3>
+<p class="font-body-md text-body-md text-slate-text">Anfa Softworks LLC, registered in New Mexico, USA. Reliable, insured, and legally compliant.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- How We Work Section -->
+<section class="bg-mist-gray py-24">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<span class="font-label-md text-label-md text-signal-blue tracking-widest uppercase mb-4 block">HOW WE WORK</span>
+<h2 class="font-display-lg text-display-lg text-anfa-blue">A small studio with senior standards.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-10 rounded-xl border border-outline-variant/10 shadow-sm">
+<span class="material-symbols-outlined text-signal-blue mb-6 block text-[32px]">workspace_premium</span>
+<h3 class="font-headline-md text-headline-md text-anfa-blue mb-4">Senior engineers only</h3>
+<p class="font-body-md text-body-md text-slate-text">Every line of code is written by a senior. No juniors learning on your project, no offshore handoffs.</p>
+</div>
+<div class="bg-white p-10 rounded-xl border border-outline-variant/10 shadow-sm">
+<span class="material-symbols-outlined text-signal-blue mb-6 block text-[32px]">request_quote</span>
+<h3 class="font-headline-md text-headline-md text-anfa-blue mb-4">Fixed scope, fixed price</h3>
+<p class="font-body-md text-body-md text-slate-text">You see the proposal before we open the editor. No surprise bills, no scope drift halfway through.</p>
+</div>
+<div class="bg-white p-10 rounded-xl border border-outline-variant/10 shadow-sm">
+<span class="material-symbols-outlined text-signal-blue mb-6 block text-[32px]">rocket_launch</span>
+<h3 class="font-headline-md text-headline-md text-anfa-blue mb-4">Ship in weeks, not quarters</h3>
+<p class="font-body-md text-body-md text-slate-text">Most projects launch in 4 to 6 weeks. We ship working software fast, then iterate based on real usage.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Section -->
+<section class="bg-white py-24 text-center overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-anfa-blue mb-12">Albuquerque, New Mexico.</h2>
+<div class="relative h-[400px] w-full flex items-center justify-center mb-12">
+<svg class="w-full h-full text-anfa-blue/5" fill="none" viewbox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+<!-- Abstract Geometric Map Representation -->
+<path d="M200 100 L600 100 L600 500 L200 500 Z" stroke="currentColor" stroke-dasharray="10 10" stroke-width="1"></path>
+<path d="M200 200 L600 200" stroke="currentColor" stroke-width="0.5"></path>
+<path d="M200 300 L600 300" stroke="currentColor" stroke-width="0.5"></path>
+<path d="M200 400 L600 400" stroke="currentColor" stroke-width="0.5"></path>
+<circle cx="400" cy="300" fill="#0B3B82" r="4"></circle>
+<circle cx="400" cy="300" r="12" stroke="#0B3B82" stroke-opacity="0.2"></circle>
+<path d="M400 100 V500" stroke="currentColor" stroke-width="0.5"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<img alt="Map placeholder" class="hidden" data-alt="A clean, minimalist topographical line map illustration of New Mexico in a deep Anfa Blue. The graphic design is sophisticated and corporate, featuring geometric precision and generous negative space to maintain a premium enterprise feel. The visual focus is on Albuquerque, marked with a subtle but distinct circular focal point." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPcyltA-48DDTpQKRUCNe1jxZdDYTNUwD_pmnPhme2jWcSbxJaFHELeVubP5-RLERf_fZXN7bKeJ3ZgexaPTZe8aok2-nBd5Wlpf7X_dG952yQD49F1puy3eKkeMXnCnfgK1rhmZHsKAlPuooXakbHoWVbLOL2Bu4zU5TMU0OY4ZIhSc8QCYdbumWYoGPh-gvBa7qEFgNzi0tSwr5WHrOxiE6QOpPOmKKAday5dfIOOalr6oSI3dMQzZc2k7q7JTZurtykMku6ViQ"/>
+</div>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant max-w-2xl mx-auto border-t border-outline-variant/30 pt-8">
+                    Anfa Softworks LLC · Albuquerque, New Mexico · United States
+                </p>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="bg-mist-gray py-24">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="font-display-lg text-display-lg text-anfa-blue mb-8">Let's build something.</h2>
+<button class="bg-signal-blue text-white px-12 py-4 rounded-lg font-headline-md text-headline-md hover:bg-anfa-blue transition-all duration-300 shadow-lg shadow-signal-blue/20">
+                    Start a project
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-white py-stack-lg px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start">
+<div class="font-headline-md text-headline-md font-bold text-primary-fixed mb-2">StudioEngineered</div>
+<p class="text-primary-fixed/70 font-body-md text-body-md">© 2024 StudioEngineered. All rights reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-primary-fixed/70 hover:text-secondary-fixed transition-colors font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-primary-fixed/70 hover:text-secondary-fixed transition-colors font-body-md text-body-md" href="#">Terms of Service</a>
+<a class="text-primary-fixed/70 hover:text-secondary-fixed transition-colors font-body-md text-body-md" href="#">Cookies</a>
+</div>
+</div>
+</footer>
+</body></html>

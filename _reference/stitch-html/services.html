@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Anfa Softworks</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Inter+Tight:wght@600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#032521",
+                        "secondary-container": "#81f3e5",
+                        "on-tertiary-container": "#c19587",
+                        "surface-container-highest": "#e3e2e1",
+                        "surface-container-high": "#e8e8e7",
+                        "on-tertiary-fixed-variant": "#603e34",
+                        "background": "#faf9f8",
+                        "outline-variant": "#c1c8c5",
+                        "on-primary-fixed-variant": "#2d4c47",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#c7eae2",
+                        "on-surface": "#1a1c1b",
+                        "secondary": "#006a62",
+                        "on-background": "#1a1c1b",
+                        "on-tertiary-fixed": "#2e140c",
+                        "inverse-surface": "#2f3130",
+                        "secondary-fixed-dim": "#66d9cc",
+                        "secondary-fixed": "#84f5e8",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#341910",
+                        "on-primary-container": "#84a59e",
+                        "surface-container": "#eeeeec",
+                        "primary-container": "#1b3b36",
+                        "surface-tint": "#44645f",
+                        "on-primary-fixed": "#00201c",
+                        "inverse-on-surface": "#f1f1ef",
+                        "outline": "#717976",
+                        "surface": "#faf9f8",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#005049",
+                        "tertiary-container": "#4d2e24",
+                        "tertiary-fixed-dim": "#ecbcad",
+                        "tertiary-fixed": "#ffdbd0",
+                        "on-surface-variant": "#414846",
+                        "on-secondary-container": "#006f66",
+                        "surface-variant": "#e3e2e1",
+                        "primary-fixed-dim": "#abcec6",
+                        "inverse-primary": "#abcec6",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#faf9f8",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f4f3f2",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#00201d",
+                        "surface-dim": "#dadad9",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "stack-lg": "32px",
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "stack-sm": "8px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "headline-xl": ["Inter Tight"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Inter Tight"],
+                        "headline-lg": ["Inter Tight"],
+                        "headline-md": ["Inter Tight"],
+                        "display-lg-mobile": ["Inter Tight"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "headline-xl": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-md": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-inner {
+            background-color: #ffffff;
+            border: 1px solid #e3e2e1;
+            transition: all 0.3s ease;
+        }
+        .bento-inner:hover {
+            box-shadow: 0 10px 30px rgba(27, 59, 54, 0.08);
+            border-color: #26A69A;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md">
+<!-- 1. TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md h-20 transition-all ease-in-out duration-300">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-full">
+<div class="font-headline-md text-headline-md font-bold text-primary">
+                StudioEngineered
+            </div>
+<div class="hidden md:flex items-center space-x-gutter">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="font-label-md text-label-md text-secondary border-b-2 border-secondary pb-1" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Work</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-primary-container transition-colors duration-200">
+                Start a project
+            </button>
+</div>
+</nav>
+<!-- 2. Hero Section -->
+<section class="pt-[220px] pb-[140px] px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto text-center md:text-left">
+<span class="font-label-md text-label-md text-secondary tracking-widest block mb-stack-sm">SERVICES</span>
+<h1 class="font-display-lg text-display-lg md:text-[72px] text-primary mb-stack-md max-w-3xl leading-tight">
+                Software, engineered.
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-stack-lg leading-relaxed">
+                Four practices. One studio. Built to ship production-grade software for businesses that can't afford to wait.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+<button class="bg-secondary text-on-secondary font-label-md text-label-md px-8 py-4 rounded-lg hover:bg-secondary/90 transition-all">
+                    Start a project
+                </button>
+<button class="border border-primary text-primary font-label-md text-label-md px-8 py-4 rounded-lg hover:bg-surface-container-low transition-all">
+                    See our work
+                </button>
+</div>
+</div>
+</section>
+<!-- 3. Service Section 1 (Web) -->
+<section class="py-[120px] px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7">
+<span class="font-label-md text-label-md text-secondary mb-stack-sm block">01 / WEB DEVELOPMENT</span>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-stack-md">Production-grade web apps and platforms.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md leading-relaxed">
+                    We architect scalable, accessible, and performant web ecosystems that serve as the backbone of modern digital business.
+                </p>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-stack-sm mb-stack-lg">
+<li class="flex items-center font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mr-2" style="font-variation-settings: 'opsz' 20">check_circle</span>
+                        Next.js / React frontends
+                    </li>
+<li class="flex items-center font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mr-2" style="font-variation-settings: 'opsz' 20">check_circle</span>
+                        Custom dashboards
+                    </li>
+<li class="flex items-center font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mr-2" style="font-variation-settings: 'opsz' 20">check_circle</span>
+                        SaaS frontends
+                    </li>
+<li class="flex items-center font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mr-2" style="font-variation-settings: 'opsz' 20">check_circle</span>
+                        API Orchestration
+                    </li>
+</ul>
+<a class="inline-flex items-center font-label-md text-label-md text-secondary hover:underline group" href="#">
+                    Start a project <span class="material-symbols-outlined ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-5">
+<div class="rounded-xl overflow-hidden border border-outline-variant bg-surface-container-lowest p-unit aspect-square flex items-center justify-center">
+<img class="w-full h-full object-cover rounded-lg" data-alt="A clean, high-contrast isometric 3D illustration of a web server architecture diagram in a minimal style. The visual uses thin lines and geometric blocks in deep forest green and emerald tones against a pristine white background. The atmosphere is professional, clinical, and sophisticated, reflecting high-end software engineering standards with airy spacing and precise alignment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKULyxeIK8jxlz4cUii0yEYk47Hs-3SOgHLnRmSGpcgX6dPGgP8j0m3ILrasBWfsOr86_YEzLS5FvldiZSQ7lKA8RzCg5vMqLYrB9959F0hrOgOX0wjpffOWYf0ndB-kIlzLKJJg7KhSl1OJu6Ni4Q8t5Uw28-eEU5LdtI5r4tVtm4bfItsascp1g2W2eS-_u-MHWIbN7ZZrRgSLBkLHhNUjQ-q2u-_-myttpqQIXYEyLnLQ01juXgwSk5L6iXccaZoYREaMLvAsw"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Service Section 2 (Mobile) -->
+<section class="py-[120px] px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 order-2 md:order-1">
+<div class="rounded-xl overflow-hidden border border-outline-variant bg-surface-container-low p-unit aspect-square flex items-center justify-center">
+<img class="w-full h-full object-cover rounded-lg" data-alt="A sophisticated mobile app UI presentation showing two overlapping smartphone frames in a clean, minimalist studio setting. The screens display a modern financial dashboard with forest green accents and high-contrast emerald highlights. The lighting is soft and diffused, creating a premium light-mode aesthetic that feels airy and modern. The composition is asymmetrical and balanced." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIfyCDiwn7M_Wjf0Ajs-b8u1H9iFeuovXSPqSm1ubxq2S2LJ84k5qTPZcsyMqcyDDTDO9nzvJljR8tkYKvGv4HGTF13dFHctLuhLBHluzsJHloZN35IdTD5RHU_BwarzFMZT5k6EYUT551iwXmzOAdeRGbF0ODBtm7z4TsiincK9-2obS2LPFl8IsL_ZwUeBSvQvaQqM8UnzWMFjSN5eeWn2oSxdYNtLw_lmpzHUA8b_STlbvTp7SZ3SOXeALcr_tdITOeO4yAAIM"/>
+</div>
+</div>
+<div class="md:col-span-7 order-1 md:order-2">
+<span class="font-label-md text-label-md text-secondary mb-stack-sm block">02 / MOBILE APPS</span>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-stack-md">Native-feel apps. Cross-platform shipped.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md leading-relaxed">
+                    Experience native performance without the native overhead. We build fluid mobile experiences that users love to keep on their home screens.
+                </p>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-stack-sm mb-stack-lg">
+<li class="flex items-center font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mr-2" style="font-variation-settings: 'opsz' 20">check_circle</span>
+                        React Native
+                    </li>
+<li class="flex items-center font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mr-2" style="font-variation-settings: 'opsz' 20">check_circle</span>
+                        Swift &amp; Kotlin
+                    </li>
+<li class="flex items-center font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mr-2" style="font-variation-settings: 'opsz' 20">check_circle</span>
+                        Offline Synchronization
+                    </li>
+<li class="flex items-center font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mr-2" style="font-variation-settings: 'opsz' 20">check_circle</span>
+                        Push Notification Systems
+                    </li>
+</ul>
+<a class="inline-flex items-center font-label-md text-label-md text-secondary hover:underline group" href="#">
+                    Start a project <span class="material-symbols-outlined ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 5. Service Section 3 (AI) -->
+<section class="py-[120px] px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7">
+<span class="font-label-md text-label-md text-secondary mb-stack-sm block">03 / AI INTEGRATION</span>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-stack-md">AI features your customers will actually use.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md leading-relaxed">
+                    Stop chasing hype. We integrate Large Language Models and custom RAG pipelines that solve real business bottlenecks and automate tedious workflows.
+                </p>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-stack-sm mb-stack-lg">
+<li class="flex items-center font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mr-2" style="font-variation-settings: 'opsz' 20">check_circle</span>
+                        OpenAI / Claude API
+                    </li>
+<li class="flex items-center font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mr-2" style="font-variation-settings: 'opsz' 20">check_circle</span>
+                        RAG (Vector DBs)
+                    </li>
+<li class="flex items-center font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mr-2" style="font-variation-settings: 'opsz' 20">check_circle</span>
+                        Custom Fine-tuning
+                    </li>
+<li class="flex items-center font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mr-2" style="font-variation-settings: 'opsz' 20">check_circle</span>
+                        AI Agent Orchestration
+                    </li>
+</ul>
+<a class="inline-flex items-center font-label-md text-label-md text-secondary hover:underline group" href="#">
+                    Start a project <span class="material-symbols-outlined ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-5">
+<div class="rounded-xl overflow-hidden border border-outline-variant bg-surface-container-lowest p-unit aspect-square flex items-center justify-center">
+<img class="w-full h-full object-cover rounded-lg" data-alt="An abstract visualization of a neural network or AI node system, using glowing emerald points connected by fine forest green lines. The style is minimalist and high-end, set against a pristine mist-white canvas. The composition feels energetic yet structured, utilizing plenty of negative space to create a sophisticated, technological atmosphere that is airy and modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbF6xdFDBGx-5voOaURg2Cf8r6a7vFrnnnGv9_OFHaRkKnctuXrf8OHXmkH82kFCRar-WsMFTcHhFV6YoPa1fZ8dRm6Ppd8C7A4hZkOUAH5otCaWZbPWVBX3fi87eiIA3FWHXX7x9EhAWc2AhoUKVNs0IjBN6sSp3z99xXFff-42k16X7fRW3hDEeH5QOZ2BbdXs4q4lltfGIms0j2zzzwl_1G5cTEvwmVgXeOGJbSkCguzbXONaYSBxS9tQbZAoLXv4FOQoK_DgQ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Service Section 4 (Custom) -->
+<section class="py-[120px] px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 order-2 md:order-1">
+<div class="rounded-xl overflow-hidden border border-outline-variant bg-surface-container-low p-unit aspect-square flex items-center justify-center">
+<img class="w-full h-full object-cover rounded-lg" data-alt="A detailed view of a high-end corporate internal tool interface. The design is meticulously aligned on an 8px grid, featuring clean white cards, thin mist-colored borders, and deep forest green typography. Subtle emerald accents indicate active data states. The lighting is bright and even, conveying a sense of engineered precision and professional authority in a modern light-mode setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlTCq3ScTlDzwbOu4BkANaQjou0k4vd3WHs8FR0VU_rsV2YrgGz7Qpu2AJhG8n-Q-8v5H4I7G_2QzF8lIvyynpiPAdYh4NMBSQzq8CccVvHcpl9FUMb4UwMKQ-J6XCTsqk4oO-B1ydBQbddyg2-jTv4wgQk7VlE8rpUvwj2MGsgkZpBtUuT3vg5jEownKJbPR1AZmC27xGNtRTP2ti7jX19q0Gqg5r4TLV5miuEI2T14AutIr7bwUF24XlfcT4ZelRnAOWLcMqfhc"/>
+</div>
+</div>
+<div class="md:col-span-7 order-1 md:order-2">
+<span class="font-label-md text-label-md text-secondary mb-stack-sm block">04 / CUSTOM SOFTWARE</span>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-stack-md">Internal tools and bespoke systems.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md leading-relaxed">
+                    When off-the-shelf software fails, we build the bridges. From ERP integrations to complex data pipelines, we build tools that fit your unique operations.
+                </p>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-stack-sm mb-stack-lg">
+<li class="flex items-center font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mr-2" style="font-variation-settings: 'opsz' 20">check_circle</span>
+                        ERP/CRM Integrations
+                    </li>
+<li class="flex items-center font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mr-2" style="font-variation-settings: 'opsz' 20">check_circle</span>
+                        Data Pipelines (ETL)
+                    </li>
+<li class="flex items-center font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mr-2" style="font-variation-settings: 'opsz' 20">check_circle</span>
+                        Legacy System Modernization
+                    </li>
+<li class="flex items-center font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary mr-2" style="font-variation-settings: 'opsz' 20">check_circle</span>
+                        Compliance &amp; Security
+                    </li>
+</ul>
+<a class="inline-flex items-center font-label-md text-label-md text-secondary hover:underline group" href="#">
+                    Start a project <span class="material-symbols-outlined ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 7. Process Strip -->
+<section class="py-[96px] px-margin-mobile md:px-margin-desktop bg-surface-container-low border-y border-outline-variant">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-[64px]">The Engineered Process</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-headline-md mb-stack-md shadow-sm">01</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-stack-sm">Discover</h3>
+<p class="font-body-md text-on-surface-variant px-4">Deep diving into your constraints, users, and business goals.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-headline-md mb-stack-md shadow-sm">02</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-stack-sm">Design</h3>
+<p class="font-body-md text-on-surface-variant px-4">Creating high-fidelity systems that bridge form and function.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-headline-md mb-stack-md shadow-sm">03</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-stack-sm">Build</h3>
+<p class="font-body-md text-on-surface-variant px-4">Iterative development with clean, scalable, and tested code.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-headline-md mb-stack-md shadow-sm">04</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-stack-sm">Launch</h3>
+<p class="font-body-md text-on-surface-variant px-4">Scaling your product into a live production environment.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. CTA Banner -->
+<section class="py-[140px] px-margin-mobile md:px-margin-desktop bg-surface-container-lowest text-center">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-display-lg text-display-lg text-primary mb-stack-md">Ready to build?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-2xl mx-auto leading-relaxed">
+                We're currently taking on new projects for Q3 and Q4. Let's discuss how we can engineer your vision into a production-grade reality.
+            </p>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-10 py-5 rounded-lg hover:bg-primary-container transition-all">
+                Start a project
+            </button>
+</div>
+</section>
+<!-- 9. Footer -->
+<footer class="bg-primary text-on-primary-fixed py-[80px] px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-[64px] mb-[80px]">
+<!-- Brand Block -->
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-primary-fixed mb-stack-md">
+                        StudioEngineered
+                    </div>
+<p class="font-body-md text-primary-fixed/70 leading-relaxed">
+                        High-end software engineering studio focused on precision, growth, and sustainable authority.
+                    </p>
+</div>
+<!-- Services -->
+<div>
+<h4 class="font-headline-md text-headline-md text-primary-fixed mb-stack-md">Services</h4>
+<ul class="space-y-stack-sm">
+<li><a class="font-body-md text-primary-fixed/70 hover:text-secondary-fixed transition-colors" href="#">Web Development</a></li>
+<li><a class="font-body-md text-primary-fixed/70 hover:text-secondary-fixed transition-colors" href="#">Mobile Apps</a></li>
+<li><a class="font-body-md text-primary-fixed/70 hover:text-secondary-fixed transition-colors" href="#">AI Integration</a></li>
+<li><a class="font-body-md text-primary-fixed/70 hover:text-secondary-fixed transition-colors" href="#">Custom Software</a></li>
+</ul>
+</div>
+<!-- Company -->
+<div>
+<h4 class="font-headline-md text-headline-md text-primary-fixed mb-stack-md">Company</h4>
+<ul class="space-y-stack-sm">
+<li><a class="font-body-md text-primary-fixed/70 hover:text-secondary-fixed transition-colors" href="#">Work</a></li>
+<li><a class="font-body-md text-primary-fixed/70 hover:text-secondary-fixed transition-colors" href="#">About Us</a></li>
+<li><a class="font-body-md text-primary-fixed/70 hover:text-secondary-fixed transition-colors" href="#">Careers</a></li>
+<li><a class="font-body-md text-primary-fixed/70 hover:text-secondary-fixed transition-colors" href="#">Insights</a></li>
+</ul>
+</div>
+<!-- Contact -->
+<div>
+<h4 class="font-headline-md text-headline-md text-primary-fixed mb-stack-md">Contact</h4>
+<ul class="space-y-stack-sm">
+<li><a class="font-body-md text-primary-fixed/70 hover:text-secondary-fixed transition-colors" href="mailto:hello@studioengineered.com">hello@studioengineered.com</a></li>
+<li class="font-body-md text-primary-fixed/70">San Francisco, CA</li>
+<li class="font-body-md text-primary-fixed/70">London, UK</li>
+</ul>
+</div>
+</div>
+<div class="pt-stack-lg border-t border-primary-fixed/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-primary-fixed/50">© 2024 StudioEngineered. All rights reserved.</p>
+<div class="flex space-x-gutter">
+<a class="font-body-md text-primary-fixed/50 hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-primary-fixed/50 hover:text-primary-fixed transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-primary-fixed/50 hover:text-primary-fixed transition-colors" href="#">Cookies</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
