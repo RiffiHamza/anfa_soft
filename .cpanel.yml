@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    # Copy the static export (including dotfiles like .htaccess) into the
+    # primary domain web root. $HOME is the cPanel account home (/home/<user>).
+    # If $HOME does not resolve in your setup, replace it with the absolute
+    # path, e.g. /home/youruser/public_html
+    - export DEPLOYPATH=$HOME/public_html
+    - /bin/cp -R out/. "$DEPLOYPATH/"

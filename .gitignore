@@ -15,7 +15,7 @@
 
 # next.js
 /.next/
-/out/
+# /out/ is committed on purpose: cPanel Git deploys these static files
 
 # production
 /build
@@ -42,3 +42,7 @@ next-env.d.ts
 
 # impeccable tool state
 /.impeccable/
+
+# deploy secrets / artifacts
+deploy.env
+/anfa-site.zip
